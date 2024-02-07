@@ -52,7 +52,13 @@ function App() {
           />
           <Route
             path="cities"
-            element={<CityList />}
+            // element={<p>List of c</p>}
+            element={
+              <CityList
+                cities={cities}
+                isLoading={isLoading}
+              />
+            }
           />
 
           <Route
