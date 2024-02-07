@@ -11,6 +11,7 @@ import Homepage from "./pages/Homepage";
 import AppLayout from "./pages/AppLayout";
 import PageNotFound from "./pages/PageNotFound";
 import CityList from "./components/CityList";
+import City from "./components/City";
 
 import CountryList from "./components/CountryList";
 
@@ -62,7 +63,10 @@ function App() {
               />
             }
           />
-
+          <Route
+            path="cities/:id"
+            element={<City />}
+          />
           <Route
             path="countries"
             element={
